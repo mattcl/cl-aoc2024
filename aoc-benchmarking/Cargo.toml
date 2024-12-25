@@ -1,0 +1,40 @@
+[package]
+name = "aoc-benchmarking"
+version = "0.1.0"
+edition = "2021"
+description = "Wrapper for having benchmarks in a single place."
+
+[[bench]]
+name = "bench_main"
+harness = false
+
+[dev-dependencies]
+criterion = { version = "0.5.1", features = ["csv_output"] }
+
+[dependencies]
+aoc-plumbing = { path = "../aoc-plumbing" }
+historian-hysteria = { path = "../day-001-historian-hysteria" }
+red-nosed-reports = { path = "../day-002-red-nosed-reports" }
+mull-it-over = { path = "../day-003-mull-it-over" }
+ceres-search = { path = "../day-004-ceres-search" }
+print-queue = { path = "../day-005-print-queue" }
+guard-gallivant = { path = "../day-006-guard-gallivant" }
+bridge-repair = { path = "../day-007-bridge-repair" }
+resonant-collinearity = { path = "../day-008-resonant-collinearity" }
+disk-fragmenter = { path = "../day-009-disk-fragmenter" }
+hoof-it = { path = "../day-010-hoof-it" }
+plutonium-pebbles = { path = "../day-011-plutonium-pebbles" }
+garden-groups = { path = "../day-012-garden-groups" }
+claw-contraption = { path = "../day-013-claw-contraption" }
+restroom-redoubt = { path = "../day-014-restroom-redoubt" }
+warehouse-woes = { path = "../day-015-warehouse-woes" }
+reindeer-maze = { path = "../day-016-reindeer-maze" }
+chronospatial-computer = { path = "../day-017-chronospatial-computer" }
+ram-run = { path = "../day-018-ram-run" }
+linen-layout = { path = "../day-019-linen-layout" }
+race-condition = { path = "../day-020-race-condition" }
+keypad-conundrum = { path = "../day-021-keypad-conundrum" }
+monkey-market = { path = "../day-022-monkey-market" }
+lan-party = { path = "../day-023-lan-party" }
+crossed-wires = { path = "../day-024-crossed-wires" }
+code-chronicle = { path = "../day-025-code-chronicle" }

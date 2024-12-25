@@ -1,0 +1,48 @@
+[package]
+name = "aoc-cli"
+version = "0.25.0"
+authors = ["Matt Chun-Lum <matt@questionable.engineering>"]
+edition = "2021"
+description = "A command line interface for executing Advent of Code solutions."
+
+[[bin]]
+name = "aoc"
+path = "src/main.rs"
+
+[features]
+default = ["clap"]
+clap = ["dep:clap", "dep:clap_complete"]
+fast = []
+
+[dependencies]
+aoc-plumbing = { path = "../aoc-plumbing" }
+anyhow = { workspace = true }
+clap = { version = "4", features = ["cargo", "env", "derive", "wrap_help"], optional = true }
+clap_complete = { version = "4", optional = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+historian-hysteria = { path = "../day-001-historian-hysteria" }
+red-nosed-reports = { path = "../day-002-red-nosed-reports" }
+mull-it-over = { path = "../day-003-mull-it-over" }
+ceres-search = { path = "../day-004-ceres-search" }
+print-queue = { path = "../day-005-print-queue" }
+guard-gallivant = { path = "../day-006-guard-gallivant" }
+bridge-repair = { path = "../day-007-bridge-repair" }
+resonant-collinearity = { path = "../day-008-resonant-collinearity" }
+disk-fragmenter = { path = "../day-009-disk-fragmenter" }
+hoof-it = { path = "../day-010-hoof-it" }
+plutonium-pebbles = { path = "../day-011-plutonium-pebbles" }
+garden-groups = { path = "../day-012-garden-groups" }
+claw-contraption = { path = "../day-013-claw-contraption" }
+restroom-redoubt = { path = "../day-014-restroom-redoubt" }
+warehouse-woes = { path = "../day-015-warehouse-woes" }
+reindeer-maze = { path = "../day-016-reindeer-maze" }
+chronospatial-computer = { path = "../day-017-chronospatial-computer" }
+ram-run = { path = "../day-018-ram-run" }
+linen-layout = { path = "../day-019-linen-layout" }
+race-condition = { path = "../day-020-race-condition" }
+keypad-conundrum = { path = "../day-021-keypad-conundrum" }
+monkey-market = { path = "../day-022-monkey-market" }
+lan-party = { path = "../day-023-lan-party" }
+crossed-wires = { path = "../day-024-crossed-wires" }
+code-chronicle = { path = "../day-025-code-chronicle" }
